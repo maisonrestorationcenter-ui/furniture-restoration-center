@@ -1,0 +1,98 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply overflow-x-hidden bg-ivory font-sans text-ink antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-serif text-forest;
+  }
+
+  :focus-visible {
+    outline: 2px solid #b39155;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  .wrap {
+    @apply mx-auto w-full max-w-7xl px-5 md:px-8;
+  }
+
+  .sec {
+    @apply py-16 md:py-24;
+  }
+
+  .h2 {
+    @apply font-serif text-3xl leading-tight md:text-5xl;
+  }
+
+  .hero-title {
+    @apply mt-4 max-w-3xl font-serif text-4xl font-semibold leading-[1.08] text-ivory sm:text-5xl md:text-7xl;
+  }
+
+  .nav-link {
+    @apply inline-flex min-h-[44px] items-center hover:text-gold;
+  }
+
+  .footer-link {
+    @apply inline-flex min-h-[44px] items-center hover:text-gold-light;
+  }
+
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 px-6 text-sm font-medium transition-colors;
+  }
+
+  .btn-gold {
+    @apply btn bg-gold text-forest-deep hover:bg-gold-light;
+  }
+
+  .btn-green {
+    @apply btn bg-forest text-ivory hover:bg-forest-deep;
+  }
+
+  .btn-line {
+    @apply btn border border-gold text-forest hover:bg-cream;
+  }
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee {
+  animation: marquee 40s linear infinite;
+}
+
+.marquee-box:hover .marquee,
+.marquee-box:focus .marquee,
+.marquee-box:focus-within .marquee {
+  animation-play-state: paused;
+}
+
+@media (max-width: 767px) {
+  .marquee {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee {
+    animation: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
