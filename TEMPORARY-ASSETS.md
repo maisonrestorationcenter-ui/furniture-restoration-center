@@ -118,3 +118,14 @@ Fake transformations are not allowed. The section appears only when both `<slug>
 
 ## Reviews and brands
 Hidden in production until verified `reviews` and `brands` are added in `lib/content.ts`.
+# Corporate page
+
+The `/corporate` page currently reuses `corporate-commercial.jpg`, `portfolio-commercial-02.jpg`, `service-office-chair.jpg` and `hero-capacity.jpg`. These are illustrative placeholders and must be replaced with genuine, permission-cleared commercial project photography before the temporary notice is removed.
+
+# About page
+
+The `/about` page currently reuses `our-story.jpg`, `workshop-intro.jpg` and `hero-end-to-end.jpg`. They are illustrative generated assets, not photographs of Furniture Restoration Center staff or facilities. Replace them with approved company, team and workshop photography before removing the visible notice.
+
+# Contact page
+
+The `/contact` hero reuses `hero-convenience.jpg` as a temporary illustrative image. Replace it with approved brand or customer-service photography. No address, email address, opening hours or map is displayed because those business details have not yet been verified.
